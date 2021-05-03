@@ -35,13 +35,11 @@ fig.add_trace(go.Candlestick(x=data.index,
                              close=data['Close'], name='market data'))
 
 # Add titles
-
 fig.update_layout(
     title='SPY live share price evolution',
     yaxis_title='Stock Price (USD per Shares)')
 
 # X-Axes
-
 fig.update_xaxes(
     rangeslider_visible=True,
     rangeselector=dict(
